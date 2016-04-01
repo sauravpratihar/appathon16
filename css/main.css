@@ -1,0 +1,2672 @@
+/*
+* Theme Name: 4182 - Responsive One Page HTML5 Template
+* Theme URI: http://development.daretogeek.com/demo/4182
+* Description: 4182 HTML Template
+* Author: DareToGeek
+* Author URI: http://www.daretogeek.com
+* Version:1.3
+*/
+/*================================================================*/
+/*  TABLE OF CONTENTS
+
+	1. GENERAL STYLES
+	2. MAIN NAVIGATION STYLING
+	3. PRELOADER STYLES
+	4. FULL PAGE BACKGROUND PARALLAX STYLING
+	5. FULL PAGE BACKGROUND PARALLAX WITH CONTENT SLIDER STYLING
+	6. FULL PAGE IMAGE SLIDER WITH CONTENT SLIDER STYLING *** NEW SINCE V1.1
+	7. FULL PAGE VIDEO HERO *** NEW SINCE V1.2
+	8. ICON BOXES STYLING
+	9. PARALLAX SECTION STYLING
+	10. TEAM MEMBERS STYLING
+	11. COUNTERS
+	12. SERVICES SECTION STYLING
+	13. PORTFOLIO SECTION STYLING
+	14. QUOTEBLOCK STYLING
+	15. TESTIMONIAL SECTION STYLING
+	16. CLIENTS SECTION STYLING
+	17. SOCIAL BLOCKS STYLING
+	18. PRICING TABLE STYLING
+	19. CONTACT STYLING
+	20. FOOTER STYLING
+	21. BLOG STYLING
+
+/*
+/*================================================================*/
+/*===========================
+/*	1. GENERAL STYLES
+===========================*/
+body {
+  background: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #333333;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+body.dark {
+  background: #161616;
+  color: #505050;
+}
+iframe {
+  border: 0;
+  width: 100%;
+  height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Raleway', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  margin-top: 5px;
+}
+h1 {
+  font-size: 42px;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+a {
+  color: #ff473c;
+}
+a:hover {
+  color: #ef0d00;
+  text-decoration: none;
+}
+.icon-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  list-style-position: outside;
+}
+.prePreLoader {
+  position: fixed;
+  z-index: 9999;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+}
+/* Section Styles */
+.full-container {
+  width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+section .container {
+  position: relative;
+  z-index: 80;
+}
+.section-content-wrapper {
+  width: 100%;
+}
+.section-content-wrapper .section-content {
+  width: 100%;
+}
+.section-heading {
+  text-align: center;
+}
+.section-heading h1 {
+  margin-top: 0;
+}
+.dark .section-heading h1,
+.dark .section-heading h2,
+.dark .section-heading h3 {
+  color: #fff;
+}
+.grey-bg {
+  background: #f9f9f9;
+}
+.grey-bg.dark {
+  background: #121212;
+}
+.mfp-content {
+  background: rgba(0, 0, 0, 0.4);
+}
+/* Typography */
+.raleway {
+  font-family: 'Raleway', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.open-sans {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+.intro-text {
+  font-size: 17px;
+}
+.intro-text .dropcap {
+  font-size: 85px;
+  line-height: 68px;
+}
+.extra-large-text {
+  font-size: 54px;
+}
+@media (max-width: 991px) {
+  .extra-large-text {
+    font-size: 46px;
+  }
+}
+@media (max-width: 767px) {
+  .extra-large-text {
+    font-size: 40px;
+  }
+}
+.dropcap {
+  float: left;
+  color: #ff473c;
+  font-size: 75px;
+  line-height: 55px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+  font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+.color {
+  color: #ff473c;
+}
+.color .lead {
+  color: #ff473c;
+}
+.color .divider.divider-1 {
+  color: #ff473c;
+}
+.color .divider.divider-1::before {
+  background: #ff473c;
+}
+.color .divider.divider-1::after {
+  background: #ff473c;
+}
+.white {
+  color: #fff;
+}
+.white .lead {
+  color: #fff;
+}
+.white .divider.divider-1 {
+  color: #fff;
+}
+.white .divider.divider-1::before {
+  background: #fff;
+}
+.white .divider.divider-1::after {
+  background: #fff;
+}
+/* Spacer */
+.spacer {
+  width: 100%;
+  clear: both;
+  display: block;
+}
+.spacer.spacer-25 {
+  height: 25px;
+}
+.spacer.spacer-50 {
+  height: 50px;
+}
+.spacer.spacer-75 {
+  height: 75px;
+}
+.spacer.spacer-100 {
+  height: 100px;
+}
+.spacer.spacer-125 {
+  height: 125px;
+}
+/* Divider */
+.divider {
+  display: block;
+}
+.divider.divider-1 {
+  font-size: 24px;
+  color: #222222;
+}
+.divider.divider-1::before {
+  content: "";
+  width: 30px;
+  height: 2px;
+  margin-bottom: 7px;
+  background: #222222;
+  display: inline-block;
+}
+.divider.divider-1::after {
+  content: "";
+  width: 30px;
+  height: 2px;
+  margin-bottom: 7px;
+  background: #222222;
+  display: inline-block;
+}
+/* Overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+}
+.overlay.overlay-1 {
+  background: url('../img/pattern1.png');
+}
+.overlay.overlay-2 {
+  background: url('../img/pattern2.png');
+}
+.overlay.overlay-3 {
+  background: rgba(0, 0, 0, 0.6);
+}
+.overlay.overlay-4 {
+  background: rgba(0, 0, 0, 0.5);
+  background-image: url('../img/pattern-dark.png');
+}
+/* Bootstrap Button Style Overrides */
+.btn {
+  border-radius: 0;
+  -webkit-transition: background 0.4s, color 0.3s;
+  -moz-transition: background 0.4s, color 0.3s;
+  -ms-transition: background 0.4s, color 0.3s;
+  transition: background 0.4s, color 0.3s;
+  font-weight: 300;
+}
+.btn.btn-default {
+  border-color: #333333;
+}
+.btn.btn-default:hover {
+  background: #333333;
+  color: #fff;
+}
+.btn.btn-primary {
+  border-color: #ff473c;
+  background: #ff473c;
+}
+.btn.btn-primary:hover {
+  background: #ef0d00;
+  border-color: #ef0d00;
+}
+.dark .btn-default {
+  border-color: #707070;
+  background: none;
+  color: #707070;
+}
+.dark .btn-default:hover {
+  background: none;
+  border-color: #909090;
+}
+/* Bootstrap Progress Bar Style Overrides */
+.progress {
+  height: 30px;
+}
+.progress .progress-bar {
+  line-height: 30px;
+  background-color: #ff473c;
+}
+.dark .progress {
+  background-color: #121212;
+}
+/* Bootstrap Form Style Overrides */
+.form-control {
+  border-radius: 0;
+  box-shadow: none;
+  padding: 12px 15px;
+  border-color: #555555;
+  margin-bottom: 20px;
+  background: none;
+  height: auto;
+}
+.form-control:focus {
+  border-color: #999999;
+  box-shadow: none;
+  border-width: 1px;
+}
+.form-control::-webkit-input-placeholder {
+  color: #333333;
+}
+.form-control:-moz-placeholder {
+  color: #333333;
+}
+.form-control::-moz-placeholder {
+  color: #333333;
+}
+.form-control:-ms-input-placeholder {
+  color: #333333;
+}
+textarea.form-control {
+  min-height: 200px;
+}
+.dark .form-control::-webkit-input-placeholder {
+  color: #505050;
+}
+.dark .form-control:-moz-placeholder {
+  color: #505050;
+}
+.dark .form-control::-moz-placeholder {
+  color: #505050;
+}
+.dark .form-control:-ms-input-placeholder {
+  color: #505050;
+}
+/* Helper Classes */
+.push-top {
+  margin-top: 50px;
+}
+.pad-top-min {
+  padding-top: 15px;
+}
+.pad-top {
+  padding-top: 50px;
+}
+.push-bottom {
+  margin-bottom: 50px;
+}
+.pad-bottom {
+  padding-bottom: 50px;
+}
+.no-pad {
+  padding: 0;
+}
+.no-push {
+  margin: 0;
+}
+/*===========================
+/*	3. PRELOADER STYLES
+===========================*/
+.preLoader {
+  position: fixed;
+  z-index: 9999;
+  background: #fff;
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.preLoader.dark {
+  background: #161616;
+  color: #fff;
+}
+.preLoader .loaders {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  color: #000;
+}
+.preLoader .loaders h1 {
+  font-size: 60px;
+}
+.preLoader .loaders .loader-logo {
+  width: 100px;
+}
+.preLoader .loaders .loader-img {
+  width: 50px;
+}
+/*==================================
+/*	2. MAIN NAVIGATION STYLING
+===================================*/
+/*
+Inside this section you will find all the CSS for the Main Navigation Bar.
+The order of the styles are:
+	- The Page Header Outer Styles
+	- The "Fixed" Class Styles
+	- The "slidein" Class Styles
+	- The "visible" Class Styles
+	- The "brand" Class Styles ( Contains Styles For Logo )
+	- The "Nav Toggle" Class Styles ( The Mobile Navigation Toggle )
+	- The "Main Nav" Class Styles ( The Navigation Area Styles )
+*/
+.nav-container {
+  width: 100%;
+  max-width: 1170px;
+}
+.pg-header-outer-wrapper {
+  height: 72px;
+}
+.pg-header {
+  width: 100%;
+  height: 72px;
+  font-family: 'Roboto', sans-serif;
+}
+.pg-header .mobile-nav {
+  height: 72px;
+}
+.pg-header.stick {
+  z-index: 999;
+  position: relative;
+}
+.pg-header.fixed {
+  -webkit-transition: background 0.4s;
+  -moz-transition: background 0.4s;
+  -ms-transition: background 0.4s;
+  -o-transition: background 0.4s;
+  transition: background 0.4s;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: auto;
+  z-index: 999;
+}
+.pg-header.fixed .main-nav .nav > li > a {
+  color: #fff;
+}
+.pg-header.fixed .brand {
+  color: #fff;
+}
+.pg-header.slidein {
+  top: -200px;
+}
+.pg-header.visible {
+  top: 0;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+.pg-header.visible .main-nav .nav > li > a {
+  color: #222222;
+}
+@media (max-width: 991px) {
+  .pg-header.visible .main-nav .nav {
+    background: rgba(255, 255, 255, 0.9);
+  }
+}
+.pg-header.visible .brand {
+  color: #222222;
+}
+.pg-header.visible .nav-toggle {
+  border-color: #222222;
+}
+.pg-header.visible .nav-toggle:after {
+  background-color: #222222;
+}
+.pg-header .brand {
+  font-size: 30px;
+  font-family: 'Raleway', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  height: 72px;
+  display: table;
+  width: 100%;
+  position: relative;
+}
+.pg-header .brand span {
+  color: #ff473c;
+}
+.pg-header .brand .logo-cont {
+  display: table-cell;
+  vertical-align: middle;
+}
+.pg-header .brand .logo-cont img {
+  width: 180px;
+}
+.pg-header .nav-toggle {
+  position: absolute;
+  width: 25px;
+  height: 15px;
+  top: 40%;
+  right: 15px;
+  border: 3px solid #fff;
+  border-width: 3px;
+  border-left: none;
+  border-right: none;
+}
+.pg-header .nav-toggle:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 3px;
+  height: 3px;
+  background-color: #ffffff;
+}
+@media (min-width: 992px) {
+  .pg-header .nav-toggle {
+    display: none;
+  }
+}
+.pg-header .main-nav {
+  width: 100%;
+}
+.pg-header .main-nav .nav {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 0;
+  border-top: 1px solid #eee;
+}
+@media (max-width: 991px) {
+  .pg-header .main-nav .nav {
+    background: rgba(255, 255, 255, 0.2);
+  }
+}
+@media (min-width: 992px) {
+  .pg-header .main-nav .nav {
+    position: static;
+    float: right;
+    width: auto;
+    display: block !important;
+    border-top: none;
+  }
+}
+.pg-header .main-nav .nav li a {
+  border-bottom: 1px solid #eee;
+}
+@media (min-width: 992px) {
+  .pg-header .main-nav .nav li a {
+    border-bottom: none;
+  }
+}
+.pg-header .main-nav .nav > li > a {
+  color: #000;
+}
+.pg-header .main-nav .nav > li > a:hover,
+.pg-header .main-nav .nav > li > a:focus {
+  color: #ff473c;
+  background: none;
+}
+@media (min-width: 992px) {
+  .pg-header .main-nav .nav > li > a {
+    padding: 25px 12px;
+  }
+}
+.pg-header .main-nav .nav > li.has-dropdown {
+  position: relative;
+}
+.pg-header .main-nav .nav > li.has-dropdown > a i {
+  color: #ff473c;
+  margin-left: 5px;
+}
+@media (max-width: 991px) {
+  .pg-header .main-nav .nav > li.has-dropdown > a i {
+    display: none;
+  }
+  .pg-header .main-nav .nav > li.has-dropdown > a:after {
+    content: "\f107";
+    font-family: "FontAwesome";
+    font-size: 18px;
+    display: inline-block;
+    float: right;
+  }
+}
+.pg-header .main-nav .nav > li.has-dropdown .dropdown {
+  display: none;
+  text-align: left;
+  list-style: none;
+  list-style-position: outside;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 95%;
+  margin-left: 5%;
+}
+.pg-header .main-nav .nav > li.has-dropdown .dropdown > li {
+  min-width: 200px;
+}
+@media (min-width: 992px) {
+  .pg-header .main-nav .nav > li.has-dropdown .dropdown > li {
+    border-bottom: 1px solid #eee;
+  }
+  .pg-header .main-nav .nav > li.has-dropdown .dropdown > li:last-child {
+    border-bottom: none;
+  }
+}
+.pg-header .main-nav .nav > li.has-dropdown .dropdown > li > a {
+  color: #000;
+  width: 100%;
+  padding: 15px;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-transition: padding 0.4s;
+  -moz-transition: padding 0.4s;
+  -ms-transition: padding 0.4s;
+  -o-transition: padding 0.4s;
+  transition: padding 0.4s;
+}
+.pg-header .main-nav .nav > li.has-dropdown .dropdown > li > a:hover {
+  padding-left: 20px;
+  color: #ff473c;
+}
+.pg-header .main-nav .nav > li.has-dropdown .dropdown.open {
+  display: block !important;
+}
+@media (min-width: 992px) {
+  .pg-header .main-nav .nav > li.has-dropdown .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: auto;
+    margin-left: 0;
+    z-index: 999;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+  }
+}
+@media (min-width: 992px) {
+  .pg-header .main-nav .nav > li {
+    display: inline-block;
+  }
+  .pg-header .main-nav .nav > li > a:after {
+    content: "";
+    height: 2px;
+    display: block;
+    background: #ff473c;
+    width: 0px;
+    -webkit-transition: width 0.4s ease;
+    -moz-transition: width 0.4s ease;
+    -ms-transition: width 0.4s ease;
+    -o-transition: width 0.4s ease;
+    transition: width 0.4s ease;
+  }
+  .pg-header .main-nav .nav > li > a:hover:after {
+    width: 100%;
+  }
+}
+.pg-header .main-nav:after {
+  content: "";
+  display: block;
+  clear: both;
+  width: 100%;
+  height: 0px;
+}
+.pg-header.dark.visible {
+  background: rgba(18, 18, 18, 0.9);
+}
+.pg-header.dark.visible .main-nav .nav > li > a {
+  color: #999;
+}
+.pg-header.dark.visible .main-nav .nav > li.has-dropdown .dropdown {
+  background: #121212;
+}
+@media (min-width: 992px) {
+  .pg-header.dark.visible .main-nav .nav > li.has-dropdown .dropdown > li {
+    border-bottom: 1px solid #161616;
+  }
+  .pg-header.dark.visible .main-nav .nav > li.has-dropdown .dropdown > li:last-child {
+    border-bottom: none;
+  }
+}
+.pg-header.dark.visible .main-nav .nav > li.has-dropdown .dropdown > li > a {
+  color: #999;
+}
+@media (max-width: 991px) {
+  .pg-header.dark.visible .main-nav .nav {
+    background: rgba(18, 18, 18, 0.9);
+  }
+}
+.pg-header.dark.visible .brand {
+  color: #999;
+}
+.pg-header.dark.visible .nav-toggle {
+  border-color: #505050;
+}
+.pg-header.dark.visible .nav-toggle:after {
+  background-color: #505050;
+}
+/*================================================
+/*	4. FULL PAGE BACKGROUND PARALLAX STYLING
+================================================*/
+/*
+Inside this section you will find all the CSS for the Full Page Background.
+The order of the styles are:
+	- The Background URLs
+	- The Full Page Background Outer Styles
+	- The Full Page Background Image Styles
+	- The Full Page Background Content Styles
+	- The Full Page Background Arrow Styles
+*/
+.home-full-bg {
+  background-image: url('../img/stock/sunset.jpg');
+}
+.blog-full-bg {
+  background-image: url('../img/stock/books.jpg');
+}
+.pg-full-bg {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.pg-full-bg .pg-full-bg-img {
+  height: 100%;
+  width: 100%;
+  position: static;
+}
+.pg-full-bg .pg-full-bg-img .pg-full-bg-img-cont {
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover cover !important;
+  -moz-background-size: cover cover !important;
+  -o-background-size: cover cover !important;
+  background-size: cover cover!important;
+}
+@media (max-width: 1024px) {
+  .pg-full-bg .pg-full-bg-img .pg-full-bg-img-cont {
+    background-attachment: scroll;
+  }
+}
+.pg-full-bg .pg-full-bg-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: table;
+  text-align: center;
+  z-index: 80;
+}
+.pg-full-bg .pg-full-bg-content .pg-full-bg-content-cont {
+  display: table-cell;
+  vertical-align: middle;
+}
+.pg-full-bg .pg-full-bg-arrow {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  z-index: 80;
+}
+.pg-full-bg .pg-full-bg-arrow a {
+  color: #fff;
+  font-size: 31px;
+}
+/*======================================================================
+/*	5. FULL PAGE BACKGROUND PARALLAX WITH CONTENT SLIDER STYLING
+======================================================================*/
+/*
+Inside this section you will find all the CSS for the Full Page Background With Content Slider.
+The order of the styles are:
+	- The Full Page Background With Content Slider URLs
+	- The Full Page Background With Content Slider Outer Styles
+	- The Full Page Background With Content Slider Image Styles
+	- The Full Page Background With Content Slider Content Styles
+	- The Full Page Background With Content Slider Arrow Styles
+*/
+.home-content-slider-img {
+  background-image: url('../img/stock/sunset.jpg');
+}
+.pg-content-slider {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.pg-content-slider .pg-content-slider-img {
+  height: 100%;
+  width: 100%;
+  position: static;
+}
+.pg-content-slider .pg-content-slider-img .pg-content-slider-img-cont {
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover cover !important;
+  -moz-background-size: cover cover !important;
+  -o-background-size: cover cover !important;
+  background-size: cover cover !important;
+}
+@media (max-width: 1024px) {
+  .pg-content-slider .pg-content-slider-img .pg-content-slider-img-cont {
+    background-attachment: scroll;
+  }
+}
+.pg-content-slider .pg-content-slider-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: table;
+  text-align: center;
+  z-index: 80;
+}
+.pg-content-slider .pg-content-slider-content .owl-wrapper-outer {
+  height: 100%;
+}
+.pg-content-slider .pg-content-slider-content .owl-wrapper-outer .owl-wrapper {
+  height: 100%;
+}
+.pg-content-slider .pg-content-slider-content .owl-wrapper-outer .owl-wrapper .owl-item {
+  height: 100%;
+}
+.pg-content-slider .pg-content-slider-content .owl-controls {
+  display: none !important;
+}
+.pg-content-slider .pg-content-slider-content .pg-content-slider-content-slide {
+  display: table;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+.pg-content-slider .pg-content-slider-content .pg-content-slider-content-slide .pg-content-slider-content-cont {
+  display: table-cell;
+  vertical-align: middle;
+}
+.pg-content-slider .pg-content-slider-arrow {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  z-index: 80;
+}
+.pg-content-slider .pg-content-slider-arrow a {
+  color: #fff;
+  font-size: 31px;
+}
+/*================================================================================
+/*	6. FULL PAGE IMAGE SLIDER WITH CONTENT SLIDER STYLING *** NEW SINCE V1.1
+================================================================================*/
+.pg-img-content-slider {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.pg-img-content-slider .pg-img-content-slider-img-cont {
+  width: 100%;
+  height: 100%;
+}
+.pg-img-content-slider .pg-img-content-slider-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: table;
+  text-align: center;
+  z-index: 80;
+}
+.pg-img-content-slider .pg-img-content-slider-content .owl-wrapper-outer {
+  height: 100%;
+}
+.pg-img-content-slider .pg-img-content-slider-content .owl-wrapper-outer .owl-wrapper {
+  height: 100%;
+}
+.pg-img-content-slider .pg-img-content-slider-content .owl-wrapper-outer .owl-wrapper .owl-item {
+  height: 100%;
+}
+.pg-img-content-slider .pg-img-content-slider-content .owl-controls {
+  display: none !important;
+}
+.pg-img-content-slider .pg-img-content-slider-content .pg-img-content-slider-content-slide {
+  display: table;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+.pg-img-content-slider .pg-img-content-slider-content .pg-img-content-slider-content-slide .pg-img-content-slider-content-cont {
+  display: table-cell;
+  vertical-align: middle;
+}
+.pg-img-content-slider .pg-img-content-slider-arrow {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  z-index: 80;
+}
+.pg-img-content-slider .pg-img-content-slider-arrow a {
+  color: #fff;
+  font-size: 31px;
+}
+/*================================================================================
+/*	7. FULL PAGE VIDEO HERO *** NEW SINCE V1.2
+================================================================================*/
+/*Inside this section you will find all the CSS for the Full Page Video.
+The order of the styles are:
+	- The Full Page Video Outer Styles
+	- The Full Page Video Image Styles
+	- The Full Page Video Content Styles
+	- The Full Page Video Arrow Styles
+*/
+.pg-full-video {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.pg-full-video .pg-full-video-cont {
+  height: 100%;
+  width: 100%;
+}
+.pg-full-video .pg-full-video-cont .pg-full-vid {
+  height: 100%;
+  width: 100%;
+}
+.pg-full-video .pg-full-video-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: table;
+  text-align: center;
+  z-index: 51;
+}
+.pg-full-video .pg-full-video-content .pg-full-video-content-cont {
+  display: table-cell;
+  vertical-align: middle;
+}
+.pg-full-video .pg-full-video-arrow {
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  text-align: center;
+  z-index: 51;
+}
+.pg-full-video .pg-full-video-arrow a {
+  color: #fff;
+  font-size: 31px;
+}
+/*=============================
+/*	8. ICON BOXES STYLING
+=============================*/
+/*
+Inside this section you will find all the CSS for the Icon Boxes.
+The order of the styles are:
+	- The Icon Boxes Outer Styles
+	- The Icon Box Styles
+	- The Icon Box Icon Styles
+	- The Icon Box Text Styles
+*/
+.icon-boxes::after {
+  display: block;
+  content: "";
+  width: 100%;
+  clear: both;
+}
+.icon-boxes .icon-box {
+  position: relative;
+  padding: 5px 25px;
+}
+.icon-boxes .icon-box .icon-box-icon {
+  position: absolute;
+  top: 0;
+  color: #222222;
+  color: rgba(221, 221, 221, 0.6);
+}
+.icon-boxes .icon-box .icon-box-icon i {
+  font-size: 72px;
+  display: table;
+  text-align: center;
+  height: 100px;
+  width: 100px;
+}
+.icon-boxes .icon-box .icon-box-icon i:before {
+  display: table-cell;
+  vertical-align: middle;
+}
+.icon-boxes .icon-box .icon-box-icon.icon-size-2 i {
+  font-size: 24px;
+}
+.icon-boxes .icon-box .icon-box-text {
+  position: relative;
+  z-index: 70;
+}
+.icon-boxes .icon-box .icon-box-text h3 {
+  margin-top: 8px;
+  font-size: 21px;
+  color: #ff473c;
+}
+.icon-boxes .icon-box:after {
+  content: "";
+  width: 100%;
+  display: block;
+  clear: both;
+  height: 0;
+}
+.icon-boxes .icon-box.left {
+  text-align: left;
+  padding-left: 0;
+}
+.icon-boxes .icon-box.left .icon-box-icon {
+  left: 3%;
+}
+.icon-boxes .icon-box.right {
+  text-align: right;
+}
+.icon-boxes .icon-box.right .icon-box-icon {
+  right: 5%;
+}
+.dark .icon-boxes .icon-box .icon-box-icon {
+  color: rgba(80, 80, 80, 0.1);
+}
+/*==================================
+/*	9. PARALLAX SECTION STYLING
+==================================*/
+/*
+Inside this section you will find all the CSS for the Parallax Section.
+The order of the styles are:
+	- The Parallax URLs
+	- The Parallax Section Styles
+*/
+.parallax-image-1 {
+  background: url('../img/stock/working.jpg');
+}
+.parallax-section {
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover cover !important;
+  -moz-background-size: cover cover !important;
+  -o-background-size: cover cover !important;
+  background-size: cover cover !important;
+  position: relative;
+  color: #fff;
+}
+@media (max-width: 1024px) {
+  .parallax-section {
+    background-attachment: scroll;
+  }
+}
+.parallax-section .btn.btn-default {
+  background: none;
+  color: white;
+  border: 1px solid #fff;
+}
+.parallax-section .btn.btn-default:hover {
+  color: #222222;
+  background: #fff;
+}
+/*==============================
+/*	10. TEAM MEMBERS STYLING
+==============================*/
+/*
+Inside this section you will find all the CSS for the Team Members.
+The order of the styles are:
+	- The Team Members Outer Styles
+	- The Team Members Navigation Styles
+	- The Team Members Info (Text) Styles
+	- The Team Members Owl Slider Pagination Styles
+
+	- The Team Member Single View Outer Styles
+	- The Team Member Single View Navigation Styles
+	- The Team Member Single View Title Styles
+	- The Team Member Single View Info (Text) Styles
+*/
+.team .team-nav {
+  display: none;
+  font-size: 21px;
+  margin: 0px 0px 50px;
+  text-align: center;
+}
+.team .team-nav .nav-item {
+  margin: 0px 15px;
+  background: #eeeeee;
+  padding: 8px 15px;
+  color: #222222;
+  cursor: pointer;
+}
+.team .team-members {
+  position: relative;
+}
+.team .team-members .team-member {
+  position: relative;
+  overflow: hidden;
+}
+.team .team-members .team-member .team-member-img {
+  position: relative;
+  overflow: hidden;
+}
+.team .team-members .team-member .team-member-img img {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.team .team-members .team-member .team-member-img:hover img {
+  -moz-transform: scale(1.4) rotate(10deg);
+  -webkit-transform: scale(1.4) rotate(10deg);
+  -o-transform: scale(1.4) rotate(10deg);
+  -ms-transform: scale(1.4) rotate(10deg);
+  transform: scale(1.4) rotate(10deg);
+}
+.team .team-members .team-member .team-member-img .team-member-more {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  z-index: 85;
+}
+.team .team-members .team-member .team-member-img .team-member-more a {
+  color: #fff;
+  font-size: 21px;
+  display: table;
+  text-align: center;
+  font-size: 24px;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  z-index: 80;
+}
+.team .team-members .team-member .team-member-img .team-member-more a i {
+  display: table-cell;
+  vertical-align: middle;
+}
+.team .team-members .team-member .team-member-img .team-member-more a i:before {
+  display: block;
+  margin-top: -50px;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.team .team-members .team-member .team-member-img .team-member-more a:hover {
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.6);
+}
+.team .team-members .team-member .team-member-img .team-member-more a:hover i:before {
+  margin-top: 0;
+  opacity: 1;
+}
+.team .team-members .team-member .team-member-info {
+  width: 100%;
+  padding-top: 15px;
+}
+.team .team-members .team-member .team-member-info .team-member-name h4 {
+  margin-top: 0;
+}
+.team .team-members .team-member .team-member-info .team-member-position {
+  font-size: 12px;
+  color: #ff473c;
+}
+.team .team-members .team-member .team-member-info .social {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.team .team-members .team-member .team-member-info .social a {
+  display: inline-block;
+  margin: 0px 5px 0px;
+  color: #222222;
+  text-align: center;
+}
+.team .team-members .team-member .team-member-info .social a:first-child {
+  margin-left: 0;
+}
+.team .team-members .team-member .team-member-info .social a i {
+  display: table;
+  background: #eeeeee;
+  height: 36px;
+  width: 36px;
+  font-size: 12px;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -ms-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+.team .team-members .team-member .team-member-info .social a i:before {
+  display: table-cell;
+  vertical-align: middle;
+}
+.team .team-members .team-member .team-member-info .social a:hover {
+  color: #fff;
+}
+.team .team-members .team-member .team-member-info .social a:hover i {
+  background: #ff473c;
+}
+.team .team-members .owl-page {
+  display: none;
+}
+.team .team-members .owl-page span {
+  background: #eeeeee !important;
+}
+.team .team-members .owl-page.active span {
+  background: #999999 !important;
+}
+.mfp-container {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.dark .team .team-members .team-member .team-member-info .social a {
+  color: #505050;
+}
+.dark .team .team-members .team-member .team-member-info .social a i {
+  background: #121212;
+}
+.dark .team .team-members .team-member .team-member-info .social a:hover {
+  color: #fff;
+}
+.dark .team .team-members .team-member .team-member-info .social a:hover i {
+  background: #ff473c;
+}
+/* Team Single Section */
+.team-member-single {
+  background: #ffffff;
+  width: 100%;
+  max-width: 650px;
+  min-height: 100%;
+  height: auto;
+  padding-top: 1px;
+  position: relative;
+  margin: 0 auto;
+}
+.team-member-single .section-content-wrapper {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.team-member-single .section-heading {
+  margin-bottom: 0;
+  margin-top: 25px;
+}
+.team-member-single .section-heading h1 {
+  font-size: 36px;
+}
+.team-member-single .team-member-nav {
+  padding: 20px 0px;
+  text-align: center;
+}
+.team-member-single .team-member-nav a {
+  color: #000;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+.team-member-single .team-member-nav a i {
+  display: table;
+  background: #eeeeee;
+  height: 42px;
+  width: 42px;
+  font-size: 18px;
+}
+.team-member-single .team-member-nav a i:before {
+  display: table-cell;
+  vertical-align: middle;
+}
+.team-member-single .team-member-nav .team-member-close {
+  width: auto;
+  height: auto;
+  position: static;
+  padding: 0;
+  font-family: 'Raleway', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  opacity: 1;
+  cursor: pointer;
+}
+.team-member-single .team-member-nav .team-member-close i {
+  font-style: normal;
+  line-height: 1;
+  height: 42px;
+  width: 42px;
+  font-size: 18px;
+  position: static;
+  padding: 0;
+  opacity: 1;
+  color: #222222;
+}
+.team-member-single .team-member-nav .team-member-close i:before {
+  content: "x";
+}
+.team-member-single .team-member-title {
+  text-align: center;
+}
+.team-member-single .team-member-title h1 {
+  font-size: 68px;
+  text-transform: uppercase;
+}
+.team-member-single .team-member-title h1:after {
+  content: "";
+  display: block;
+  margin: 20px auto;
+  height: 5px;
+  width: 100px;
+  background: #ff473c;
+}
+.team-member-single .team-member-info {
+  width: 100%;
+  height: 100%;
+}
+.team-member-single .team-member-info .img {
+  width: 100%;
+  margin: 0 auto;
+}
+.team-member-single .team-member-info .text {
+  font-size: 16px;
+  padding: 25px;
+  padding-top: 0;
+}
+.team-member-single .team-member-info .text h2 {
+  margin-top: 0;
+  font-weight: normal;
+}
+.team-member-single .team-member-info .social {
+  border-top: 1px solid #eee;
+  padding: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.team-member-single .team-member-info .social a {
+  display: inline-block;
+  margin: 0px 5px 0px;
+  color: #222222;
+  text-align: center;
+}
+.team-member-single .team-member-info .social a:first-child {
+  margin-left: 0;
+}
+.team-member-single .team-member-info .social a i {
+  display: table;
+  background: #eeeeee;
+  height: 42px;
+  width: 42px;
+  font-size: 18px;
+}
+.team-member-single .team-member-info .social a i:before {
+  display: table-cell;
+  vertical-align: middle;
+}
+.team-member-single.dark {
+  background: #161616;
+}
+.team-member-single.dark .team-member-info .social {
+  border-color: #121212;
+}
+.team-member-single.dark .team-member-info .social a {
+  color: #707070;
+}
+.team-member-single.dark .team-member-info .social a i {
+  background: #121212;
+}
+.team-member-single.dark .team-member-info .social a:hover {
+  color: #fff;
+}
+.team-member-single.dark .team-member-info .social a:hover i {
+  background: #141414;
+}
+/*=============================
+/*	11. COUNTERS
+=============================*/
+/*
+Inside this section you will find all the CSS for the Counter Section.
+The order of the styles are:
+	- The Counter Outer Styles
+	- The Counter Section Text Styles
+*/
+.counters .counter {
+  font-size: 46px;
+  font-weight: lighter;
+  color: #ff473c;
+}
+.counters h1,
+.counters h2,
+.counters h3,
+.counters h4,
+.counters h5,
+.counters h6 {
+  font-weight: lighter;
+  margin-top: 0px;
+}
+.counters h1:after,
+.counters h2:after,
+.counters h3:after,
+.counters h4:after,
+.counters h5:after,
+.counters h6:after {
+  content: "";
+  width: 30px;
+  height: 3px;
+  background: #ff473c;
+  display: block;
+  margin: 10px auto 0px;
+}
+/*====================================
+/*	12. SERVICES SECTION STYLING
+====================================*/
+/*
+Inside this section you will find all the CSS for the Services Section.
+The order of the styles are:
+	- The Services Outer Styles
+	- The Services Nav Styles
+	- The Service Items
+	- The Service Items Icons
+	- The Service Items Owl Pagination
+*/
+
+#daiict{
+    background-image: url('../img/clg.jpg');
+
+}
+.services {
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+  position: relative;
+  /*background-image: url('../img/stock/clg.jpg');*/
+}
+@media (max-width: 1024px) {
+  .services {
+    background-attachment: scroll;
+  }
+}
+.services .service-nav {
+  font-size: 21px;
+  margin: 0px 0px 50px;
+  text-align: center;
+}
+.services .service-nav .nav-item {
+  margin: 0px 15px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px 15px;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+.services .service-items .service-item {
+  text-align: center;
+  padding: 0 15px;
+  color: #fff;
+}
+.services .service-items .service-item .service-item-icon {
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.2);
+  margin: 0 auto 15px;
+}
+.services .service-items .service-item .service-item-icon i {
+  font-size: 36px;
+  display: table;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+.services .service-items .service-item .service-item-icon i:before {
+  display: table-cell;
+  vertical-align: middle;
+}
+.services .service-items .owl-page span {
+  background: rgba(255, 255, 255, 0.4) !important;
+}
+.services .service-items .owl-page.active span {
+  background: rgba(255, 255, 255, 0.8) !important;
+}
+.dark .services h1,
+.dark .services h2,
+.dark .services h3,
+.dark .services h4 {
+  color: #fff;
+}
+/*=====================================
+/*	13. PORTFOLIO SECTION STYLING
+=====================================*/
+/*
+Inside this section you will find all the CSS for the Portfolio.
+The order of the styles are:
+	- The Portfolio Filter Styles
+	- The Portfolio Item Styles
+	- The Portfolio Item Details Styles
+*/
+.work .section-content-wrapper {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.portfolio-filters {
+  margin: 0px 0px 25px;
+}
+.portfolio-filters ul {
+  list-style: none;
+  list-style-position: outside;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+.portfolio-filters ul li {
+  display: inline-block;
+  margin: 0 10px 25px;
+  border: 1px solid #ff473c;
+  -webkit-transition: all 0.8s ease 0s;
+  -moz-transition: all 0.8s ease 0s;
+  -ms-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+.portfolio-filters ul li:before {
+  content: "";
+  margin-right: 0;
+}
+.portfolio-filters ul li a {
+  -webkit-transition: all 0.8s ease 0s;
+  -moz-transition: all 0.8s ease 0s;
+  -ms-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+  padding: 10px 15px;
+  display: inline-block;
+}
+.portfolio-filters ul li:hover {
+  background: #ff473c;
+}
+.portfolio-filters ul li:hover a {
+  color: #fff;
+}
+.portfolio-filters ul:after {
+  content: "";
+  width: 100%;
+  display: block;
+  clear: both;
+}
+.portfolio-items .portfolio-item {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.portfolio-items .portfolio-item .portfolio-item-inner {
+  position: relative;
+}
+.portfolio-items .portfolio-item .portfolio-item-inner .portfolio-item-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -ms-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  display: block;
+}
+.portfolio-items .portfolio-item .portfolio-item-inner .portfolio-item-details .portfolio-item-name {
+  position: relative;
+  top: 50%;
+  margin-top: 0px;
+  opacity: 0;
+  -webkit-transition: all 0.6s ease-in-out 0s;
+  -moz-transition: all 0.6s ease-in-out 0s;
+  -ms-transition: all 0.6s ease-in-out 0s;
+  -o-transition: all 0.6s ease-in-out 0s;
+  transition: all 0.6s ease-in-out 0s;
+}
+.portfolio-items .portfolio-item .portfolio-item-inner .portfolio-item-details .portfolio-item-name h3 {
+  margin-bottom: 0px;
+  font-weight: lighter;
+}
+.portfolio-items .portfolio-item .portfolio-item-inner .portfolio-item-details .divider {
+  position: relative;
+  top: 50%;
+  opacity: 0;
+  -webkit-transition: all 0.6s ease-in-out 0s;
+  -moz-transition: all 0.6s ease-in-out 0s;
+  -ms-transition: all 0.6s ease-in-out 0s;
+  -o-transition: all 0.6s ease-in-out 0s;
+  transition: all 0.6s ease-in-out 0s;
+}
+.portfolio-items .portfolio-item .portfolio-item-inner .portfolio-item-details .portfolio-item-category {
+  position: relative;
+  top: 50%;
+  margin-top: 0px;
+  opacity: 0;
+  -webkit-transition: all 0.6s ease-in-out 0s;
+  -moz-transition: all 0.6s ease-in-out 0s;
+  -ms-transition: all 0.6s ease-in-out 0s;
+  -o-transition: all 0.6s ease-in-out 0s;
+  transition: all 0.6s ease-in-out 0s;
+}
+.portfolio-items .portfolio-item .portfolio-item-inner .portfolio-item-details:hover {
+  opacity: 1;
+}
+.portfolio-items .portfolio-item .portfolio-item-inner .portfolio-item-details:hover .portfolio-item-name {
+  margin-top: -40px;
+  opacity: 1;
+}
+.portfolio-items .portfolio-item .portfolio-item-inner .portfolio-item-details:hover .divider {
+  opacity: 1;
+}
+.portfolio-items .portfolio-item .portfolio-item-inner .portfolio-item-details:hover .portfolio-item-category {
+  opacity: 1;
+}
+.dark .portfolio-items h1,
+.dark .portfolio-items h2,
+.dark .portfolio-items h3,
+.dark .portfolio-items h4 {
+  color: #fff;
+}
+/* Project Page Styles
+=======================
+Inside this section you will find all the CSS for the Project Pages.
+The order of the styles are:
+	- The Project Outer Styles
+	- The Project Nav Styles
+	- The Project Media Styles
+	- The Project Full Slider Content Styles
+	- The Project Full Slider Content URLs
+	- The Project Full Slider Content
+*/
+.project {
+  background: #ffffff;
+  width: 100%;
+  max-width: 650px;
+  min-height: 100%;
+  height: auto;
+  padding-top: 1px;
+  position: relative;
+  margin: 0 auto;
+}
+.project .section-content-wrapper {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.project .section-heading {
+  margin-bottom: 0;
+  margin-top: 25px;
+}
+.project .section-heading h1 {
+  font-size: 36px;
+}
+.project .project-nav {
+  text-align: center;
+}
+.project .project-nav a {
+  color: #000;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+.project .project-nav a i {
+  display: table;
+  background: #eeeeee;
+  height: 42px;
+  width: 42px;
+  font-size: 18px;
+}
+.project .project-nav a i:before {
+  display: table-cell;
+  vertical-align: middle;
+}
+.project .project-nav .project-close {
+  width: auto;
+  height: auto;
+  position: static;
+  padding: 0;
+  font-family: 'Raleway', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  opacity: 1;
+  cursor: pointer;
+}
+.project .project-nav .project-close i {
+  font-style: normal;
+  line-height: 1;
+  height: 42px;
+  width: 42px;
+  font-size: 18px;
+  position: static;
+  padding: 0;
+  opacity: 1;
+  color: #222222;
+}
+.project .project-nav .project-close i:before {
+  content: "x";
+}
+.project .project-media .project-slider {
+  position: relative;
+  overflow: hidden;
+}
+.project .project-media .project-slider .project-slide-nav {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  z-index: 80;
+}
+@media (max-width: 767px) {
+  .project .project-media .project-slider .project-slide-nav {
+    top: 35%;
+  }
+}
+.project .project-media .project-slider .project-slide-nav .nav-item i {
+  font-size: 32px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #fff;
+  width: 48px;
+  height: 48px;
+  display: table;
+  text-align: center;
+}
+.project .project-media .project-slider .project-slide-nav .nav-item i:before {
+  display: table-cell;
+  vertical-align: middle;
+}
+.project .project-media .project-slider .project-slide-nav .nav-item.prev {
+  float: left;
+  margin-left: 15px;
+}
+.project .project-media .project-slider .project-slide-nav .nav-item.next {
+  float: right;
+  margin-right: 15px;
+}
+.project .project-media .project-slider .owl-theme .owl-controls {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+}
+.project .project-media .project-slider .owl-page span {
+  background: rgba(255, 255, 255, 0.4) !important;
+}
+.project .project-media .project-slider .owl-page.active span {
+  background: rgba(255, 255, 255, 0.8) !important;
+}
+.project .project-info {
+  font-size: 16px;
+  padding: 25px;
+  padding-top: 0;
+}
+.project .project-info h3 {
+  text-transform: capitalize;
+}
+.dark .project {
+  background: #121212;
+}
+/* Isotope Styles
+=====================*/
+.isotope-item {
+  z-index: 2;
+}
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -ms-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+}
+.isotope {
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  -ms-transition-property: height, width;
+  -o-transition-property: height, width;
+  transition-property: height, width;
+}
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  -ms-transition-property: -ms-transform, opacity;
+  -o-transition-property: -o-transform, opacity;
+  transition-property: transform, opacity;
+}
+/**** disabling Isotope CSS3 transitions ****/
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -ms-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s;
+}
+/*================================
+/*	14. QUOTEBLOCK STYLING
+================================*/
+/*
+Inside this section you will find all the CSS for the Quote Block on the index.html page.
+The order of the styles are:
+	- The Quote Block Outer Styles
+	- The Quote Block Wrapper Styles
+*/
+.quote-block {
+  padding: 50px 0px;
+  font-weight: 400;
+  font-size: 18px;
+}
+.quote-block .quote-wrapper {
+  display: table;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.quote-block .quote-wrapper p {
+  display: table-cell;
+  vertical-align: middle;
+  color: rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.6s ease 0.1s;
+  -moz-transition: all 0.6s ease 0.1s;
+  -ms-transition: all 0.6s ease 0.1s;
+  -o-transition: all 0.6s ease 0.1s;
+  transition: all 0.6s ease 0.1s;
+}
+.quote-block .quote-wrapper p:before {
+  content: "\f10d";
+  display: inline-block;
+  font-family: FontAwesome;
+  margin-right: 5px;
+  color: rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.6s ease 0.1s;
+  -moz-transition: all 0.6s ease 0.1s;
+  -ms-transition: all 0.6s ease 0.1s;
+  -o-transition: all 0.6s ease 0.1s;
+  transition: all 0.6s ease 0.1s;
+}
+.quote-block .quote-wrapper p:after {
+  content: "\f10e";
+  display: inline-block;
+  font-family: FontAwesome;
+  margin-left: 5px;
+  color: rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.6s ease 0.1s;
+  -moz-transition: all 0.6s ease 0.1s;
+  -ms-transition: all 0.6s ease 0.1s;
+  -o-transition: all 0.6s ease 0.1s;
+  transition: all 0.6s ease 0.1s;
+}
+.quote-block:hover .quote-wrapper p {
+  color: #222222;
+}
+.quote-block:hover .quote-wrapper p:before {
+  color: #222222;
+}
+.quote-block:hover .quote-wrapper p:after {
+  color: #222222;
+}
+.dark .quote-block .quote-wrapper p {
+  color: rgba(112, 112, 112, 0.2);
+}
+.dark .quote-block .quote-wrapper p:before {
+  color: rgba(112, 112, 112, 0.2);
+}
+.dark .quote-block .quote-wrapper p:after {
+  color: rgba(112, 112, 112, 0.2);
+}
+.dark .quote-block:hover .quote-wrapper p {
+  color: rgba(112, 112, 112, 0.6);
+}
+.dark .quote-block:hover .quote-wrapper p:before {
+  color: rgba(112, 112, 112, 0.6);
+}
+.dark .quote-block:hover .quote-wrapper p:after {
+  color: rgba(112, 112, 112, 0.6);
+}
+/*========================================
+/*	15. TESTIMONIAL SECTION STYLING
+========================================*/
+/*
+Inside this section you will find all the CSS for the Testimonials on the index.html page.
+The order of the styles are:
+	- The Testimonials Outer Styles
+	- The Testimonial Navigation Styles
+	- The Testimonial Icon Styles
+	- The Testimonial Info (Text) Styles
+	- The Testimonial Owl Slider Pagination Styles
+*/
+.testimonials {
+  position: relative;
+  background: url('../img/stock/walking.jpg');
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+  overflow: hidden;
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .testimonials {
+    background-attachment: scroll;
+  }
+}
+.testimonials .testimonial-nav {
+  font-size: 21px;
+  margin: 0px 0px 50px;
+  text-align: center;
+}
+.testimonials .testimonial-nav .nav-item {
+  margin: 0px 15px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px 15px;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+.testimonials .testimonial-container:after {
+  content: "";
+  display: block;
+  width: 100%;
+  clear: both;
+}
+.testimonials .testimonial-container .testimonial {
+  color: #fff;
+  margin-bottom: 25px;
+  padding: 0 25px;
+}
+.testimonials .testimonial-container .testimonial:after {
+  content: "";
+  display: block;
+  width: 100%;
+  clear: both;
+}
+.testimonials .testimonial-container .testimonial .testimonial-icon {
+  float: left;
+  margin-right: 15px;
+  width: 73px;
+}
+@media (max-width: 991px) {
+  .testimonials .testimonial-container .testimonial .testimonial-icon {
+    float: none;
+    margin: 0 auto 15px;
+  }
+}
+.testimonials .testimonial-container .testimonial .testimonial-icon i {
+  display: table;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.2);
+  font-size: 31px;
+  color: #ffffff;
+}
+.testimonials .testimonial-container .testimonial .testimonial-icon i:before {
+  display: table-cell;
+  vertical-align: middle;
+}
+.testimonials .testimonial-container .testimonial .testimonial-info {
+  float: left;
+  width: 80%;
+}
+@media (max-width: 1199px) {
+  .testimonials .testimonial-container .testimonial .testimonial-info {
+    width: 70%;
+  }
+}
+@media (max-width: 991px) {
+  .testimonials .testimonial-container .testimonial .testimonial-info {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+}
+.testimonials .testimonial-container .testimonial.left {
+  text-align: right;
+}
+.testimonials .testimonial-container .testimonial.left .testimonial-icon {
+  float: right;
+  margin-left: 15px;
+  margin-right: 0px;
+}
+.testimonials .testimonial-container .testimonial.left .testimonial-info {
+  float: right;
+}
+.testimonials .owl-page span {
+  background: rgba(255, 255, 255, 0.4) !important;
+}
+.testimonials .owl-page.active span {
+  background: rgba(255, 255, 255, 0.8) !important;
+}
+/*=================================
+/*	16. CLIENTS SECTION STYLING
+==================================*/
+/*
+Inside this section you will find all the CSS for the Clients Section on the index.html page.
+*/
+.clients .client-items .client-item {
+  text-align: center;
+  height: 80px;
+  display: table;
+  width: 100%;
+}
+.clients .client-items .client-item a {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  height: 100%;
+}
+.clients .client-items .client-item a img {
+  vertical-align: middle;
+  max-width: 105px;
+  max-height: 30px;
+}
+.clients .client-items .owl-page {
+  display: none;
+}
+/*=================================
+/*	17. SOCIAL BLOCKS STYLING
+=================================*/
+/*
+Inside this section you will find all the CSS for the Social Buttons on the index.html page.
+The order of the styles are:
+	- The Social Boxes Outer Styles
+	- The Social Box Icon Styles
+	- The Social Box Text Styles
+	- The Social Box Hover Effects For Each Icon Seperately ( Facebook, Twitter, Youtube, Google+ )
+*/
+.social .social-boxes .social-box {
+  text-align: center;
+  color: #555555;
+  overflow: hidden;
+  background: #f9f9f9;
+  border: 0 !important;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.social .social-boxes .social-box .social-box-icon {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin: 0 0 0 0;
+}
+.social .social-boxes .social-box .social-box-icon a i {
+  display: table;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  font-size: 42px;
+  color: #555555;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  position: relative;
+  z-index: 50;
+}
+.social .social-boxes .social-box .social-box-icon a i:before {
+  display: table-cell;
+  vertical-align: middle;
+}
+.social .social-boxes .social-box .social-box-icon a i:hover {
+  color: #fff;
+}
+.social .social-boxes .social-box:hover {
+  color: #fff;
+}
+.social .social-boxes .social-box:hover .social-box-icon a i {
+  color: #fff;
+}
+.social .social-boxes .social-box.facebook:hover {
+  background: #3b5998;
+}
+.social .social-boxes .social-box.twitter:hover {
+  background: #4099ff;
+}
+.social .social-boxes .social-box.youtube:hover {
+  background: #e52d27;
+}
+.social .social-boxes .social-box.google:hover {
+  background: #d34836;
+}
+.dark .social .social-boxes .social-box {
+  background: #121212;
+}
+.dark .social .social-boxes .social-box:hover h3 {
+  color: #fff;
+}
+/*================================
+/*	18. PRICING TABLE STYLING
+================================*/
+/*
+Inside this section you will find all the CSS for the pricing tables on the index.html page.
+The order of the styles are:
+	- The Pricing Tables Container Styles
+	- The Pricing Table Styles
+*/
+.pricing {
+  text-align: center;
+  font-size: 16px;
+  font-weight: lighter;
+  background: url('../img/stock/desk.jpg');
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+  padding: 0px 0px 50px;
+  position: relative;
+}
+@media (max-width: 1024px) {
+  .pricing {
+    background-attachment: scroll;
+  }
+}
+.pricing .pricing-table {
+  padding: 20px 0px 0px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid #fff;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .pricing .pricing-table {
+    margin-bottom: 25px;
+  }
+}
+.pricing .pricing-table.featured {
+  border: 3px solid #ff473c;
+}
+.pricing .pricing-table.featured .pricing-table-cta a {
+  background: none;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.pricing .pricing-table.featured .pricing-table-cta a:hover {
+  background: #fff;
+  color: #ff473c;
+}
+.pricing .pricing-table > div {
+  margin-bottom: 10px;
+}
+.pricing .pricing-table .pricing-table-details {
+  margin-top: 30px;
+}
+.pricing .pricing-table .pricing-table-details ul {
+  margin: 0;
+  padding: 0;
+  list-style-position: outside;
+  list-style: none;
+}
+.pricing .pricing-table .pricing-table-details ul li {
+  margin-bottom: 10px;
+}
+.pricing .pricing-table .pricing-table-details ul li:before {
+  content: "";
+}
+.pricing .pricing-table .pricing-table-details ul li strong {
+  font-weight: 400;
+}
+.pricing .pricing-table .pricing-table-cta {
+  margin: 25px 0px;
+}
+.pricing .pricing-table .pricing-table-cta a {
+  font-size: 18px !important;
+  padding: 10px 25px;
+  background: none;
+  color: #fff;
+  border: 1px solid #fff;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -ms-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  transition: all 0.6s;
+}
+.pricing .pricing-table .pricing-table-cta a:hover {
+  color: #fff;
+  background: #222222;
+}
+.dark .pricing h1,
+.dark .pricing h2,
+.dark .pricing h3 {
+  color: #fff;
+}
+/*==========================
+/*	19. CONTACT STYLING
+==========================*/
+/*
+Inside this section you will find all the CSS for the contact form on the index.html page.
+The order of the styles are:
+	- The Contact Form Outer Styles
+	- The Contact Form Wrapper Styles
+	- The Contact Form Container
+	- The Contact Form Map
+*/
+#contact {
+  width: 100%;
+}
+#contact .contact-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#contact .contact-wrapper::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  clear: both;
+}
+#contact .contact-wrapper .contact-form-container {
+  float: left;
+  width: 65%;
+  height: 100%;
+  z-index: 8;
+  padding: 0 60px;
+}
+#contact .contact-wrapper .contact-form-container .alert {
+  display: none;
+}
+@media (max-width: 767px) {
+  #contact .contact-wrapper .contact-form-container {
+    width: 100%;
+  }
+}
+#contact .contact-wrapper .contact-form-map-cont {
+  float: center;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  #contact .contact-wrapper .contact-form-map-cont {
+    width: 100%;
+    height: 200px !important;
+    overflow: hidden;
+  }
+}
+#contact .contact-wrapper .contact-form-map {
+  /*@filter: ~"grayscale(90%)";
+			-webkit-filter: @filter;
+			-moz-filter: @filter;
+			-ms-filter: @filter;
+			-o-filter: @filter;
+			filter: @filter;
+			filter: url(../img/grayscale.svg#greyscale);
+			filter: gray;*/
+  height: 100%;
+}
+/* Contact Info Styling
+==========================
+Inside this section you will find all the CSS for the contact info block on the index.html page.
+The order of the styles are:
+	- The Contact Info Outer Styles
+	- The Contact Info Icon
+	- The Contact Info Text
+*/
+.contact-info {
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+  position: relative;
+  background-image: url('../img/stock/desk.jpg');
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .contact-info {
+    background-attachment: scroll;
+  }
+}
+.contact-info .contact-info-block {
+  padding: 25px;
+}
+.contact-info .contact-info-block .contact-item {
+  color: #fff;
+}
+.contact-info .contact-info-block .contact-item .contact-item-icon {
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.2);
+  margin: 0 auto 15px;
+}
+.contact-info .contact-info-block .contact-item .contact-item-icon i {
+  font-size: 38px;
+  display: table;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+.contact-info .contact-info-block .contact-item .contact-item-icon i:before {
+  display: table-cell;
+  vertical-align: middle;
+}
+.contact-info .contact-info-block .contact-item .contact-item-text {
+  font-size: 18px;
+}
+.contact-info .contact-info-block .contact-item .contact-item-text a {
+  color: #fff;
+  -webkit-transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+  -ms-transition: all 0.8s ease;
+  -o-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+.contact-info .contact-info-block .contact-item .contact-item-text a:hover {
+  color: #ff473c;
+}
+/*==========================
+/*	20. FOOTER STYLING
+==========================*/
+/*
+Inside this section you will find all the CSS for the Page Footer.
+The order of the styles are:
+	- The Footer Outer Styles
+	- The Back To Top Button Styles
+*/
+.pg-footer {
+  text-align: center;
+  padding: 30px 0px 20px;
+  background-color: rgb(240, 240, 240);
+}
+.pg-footer .back-to-top {
+  background: rgba(255, 255, 255, 0.2);
+  width: 48px;
+  height: 48px;
+  font-size: 24px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  -webkit-transition: background 0.4s ease;
+  -moz-transition: background 0.4s ease;
+  -ms-transition: background 0.4s ease;
+  -o-transition: background 0.4s ease;
+  transition: background 0.4s ease;
+  display: table;
+  text-align: center;
+  z-index: 999;
+}
+.pg-footer .back-to-top a {
+  display: table-cell;
+  vertical-align: middle;
+  color: #222222;
+}
+.pg-footer .back-to-top:hover {
+  background: #ffffff;
+}
+.pg-footer .back-to-top:hover a {
+  color: #222222;
+}
+.pg-footer .footer-logo {
+  width: 75px;
+  margin: 0 auto 25px;
+}
+/*=======================
+/*	21. BLOG STYLING
+=======================*/
+/*
+Inside this section you will find all the CSS for the blog.html & blog-single.html page.
+The order of the styles are:
+	- The Post Outer Styles
+	- The Post Title With Post Meta
+	- The Post Media Section (Including Post Slider)
+	- The Post Content Styles
+	- The Comment Form
+	- The Blog Sidebar
+	- The Pagination
+*/
+.blog .posts .post {
+  padding-bottom: 50px;
+  margin-bottom: 30px;
+}
+.blog .post {
+  border-bottom: 1px solid #eeeeee;
+}
+.blog .post .post-title {
+  text-align: center;
+  margin: 25px 0px;
+}
+.blog .post .post-title h2 {
+  margin-top: 0;
+  font-size: 30px;
+}
+.blog .post .post-title h2 a {
+  color: #222222;
+}
+.blog .post .post-title h2 a:hover {
+  color: #ff473c;
+}
+.blog .post .post-title .post-meta span {
+  padding: 0 5px;
+}
+.blog .post .post-title .post-meta span:first-child {
+  padding-left: 0;
+}
+.blog .post .post-media .post-slider {
+  position: relative;
+  overflow: hidden;
+}
+.blog .post .post-media .post-slider .post-slider-nav {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  z-index: 80;
+}
+@media (max-width: 767px) {
+  .blog .post .post-media .post-slider .post-slider-nav {
+    top: 35%;
+  }
+}
+.blog .post .post-media .post-slider .post-slider-nav .nav-item i {
+  font-size: 32px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #fff;
+  width: 48px;
+  height: 48px;
+  display: table;
+  text-align: center;
+}
+.blog .post .post-media .post-slider .post-slider-nav .nav-item i:before {
+  display: table-cell;
+  vertical-align: middle;
+}
+.blog .post .post-media .post-slider .post-slider-nav .nav-item.nav-left {
+  float: left;
+  margin-left: 15px;
+}
+.blog .post .post-media .post-slider .post-slider-nav .nav-item.nav-right {
+  float: right;
+  margin-right: 15px;
+}
+.blog .post .post-media .post-slider .owl-theme .owl-controls {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+}
+.blog .post .post-media .post-slider .owl-page span {
+  background: rgba(255, 255, 255, 0.4) !important;
+}
+.blog .post .post-media .post-slider .owl-page.active span {
+  background: rgba(255, 255, 255, 0.8) !important;
+}
+.blog .post .post-content {
+  padding: 25px 0px 20px;
+}
+.blog .post .post-content .column {
+  padding: 10px;
+}
+.blog .comments {
+  margin-top: 25px;
+}
+.blog .comments h3 {
+  margin-bottom: 25px;
+}
+.blog .comments .comments-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  list-style-position: outside;
+}
+.blog .comments .comments-list .user-image {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  float: left;
+  margin-right: 30px;
+  position: relative;
+}
+.blog .comments .comments-list .user-image img {
+  height: 100%;
+  width: auto;
+}
+.blog .comments .comments-list .message {
+  overflow: hidden;
+  border: 1px solid #e3e3e3;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+.blog .comments .comments-list .message .comment-meta {
+  margin: 10px 0px;
+  font-size: 0.875em;
+}
+.blog .comments .comments-list .message .comment-meta .date-meta {
+  margin-right: 5px;
+}
+.blog .comments .comments-list .message .comment-meta .reply-link {
+  border-left: 1px solid #e3e3e3;
+  padding-left: 10px;
+  display: inline-block;
+}
+.blog .comments .comments-list ul {
+  list-style: none;
+}
+.blog .comment-form .row {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.blog .comment-form .comment-form-heading {
+  text-align: center;
+  margin: 25px 0px;
+}
+.blog .comment-form .comment-form-heading h1 {
+  margin-top: 0;
+}
+.blog .blog-sidebar .sidebar-block {
+  margin: 25px 0px 30px;
+}
+.blog .blog-sidebar .sidebar-block:last-child {
+  margin: 0px;
+}
+.blog .blog-sidebar .sidebar-block .widget ul li {
+  margin: 15px 0px;
+}
+.blog .pagination > li > a,
+.blog .pagination > li > span {
+  color: #222;
+  background: #eee;
+  border: none;
+  margin: 0 1px;
+}
+.blog .pagination > li:first-child > a,
+.blog .pagination > li:first-child > span,
+.blog .pagination > li:last-child > a,
+.blog .pagination > li:last-child > span {
+  border-radius: 0;
+}
+.blog .pagination > .active > a,
+.blog .pagination > .active > span,
+.blog .pagination > .active > a:hover,
+.blog .pagination > .active > span:hover,
+.blog .pagination > .active > a:focus,
+.blog .pagination > .active > span:focus {
+  color: #fff;
+  background-color: #ff473c;
+  border-color: #ff473c;
+}
+.dark .post {
+  border-bottom: 1px solid #505050;
+}
+.dark .post .post-title h2 a {
+  color: #999;
+}
+.dark .post .post-title h2 a:hover {
+  color: #ff473c;
+}
+.dark .pagination > li > a,
+.dark .pagination > li > span {
+  color: #505050;
+  background: #121212;
+}
+.dark .comments .comments-list .message {
+  border-color: #505050;
+}
+.dark .comment-form-heading h1,
+.dark .comment-form-heading h2,
+.dark .comment-form-heading h3 {
+  color: #999;
+}
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6 {
+  color: #707070;
+}
+.dark .section-heading h1 {
+  color: #fff;
+}
+.dark .white {
+  color: #fff;
+}
+.dark .white h1 {
+  color: #fff;
+}
+.dark .white .lead {
+  color: #fff;
+}
+.dark .white .divider.divider-1 {
+  color: #fff;
+}
+.dark .white .divider.divider-1::before {
+  background: #fff;
+}
+.dark .white .divider.divider-1::after {
+  background: #fff;
+}
+.dark .divider.divider-1 {
+  color: #909090;
+}
+.dark .divider.divider-1::before {
+  background: #909090;
+}
+.dark .divider.divider-1::after {
+  background: #909090;
+}
+.dark .lead {
+  color: #707070;
+}
+
+
+#list8 ul 
+{ 
+    list-style:none; 
+    /*padding-left: 0px;*/
+}
+#list8 ul li 
+{ 
+    font-size:18px; 
+    /*padding-bottom: 5px;*/
+}
+#list8 ul li a 
+{ 
+    display:block;  
+    /*background-color:#fff; */
+    /*border-left:5px solid #fff; */
+    /*border-right:5px solid #fff; */
+    text-decoration:none; 
+    color:#000;
+    text-align: left; 
+}
+#list8 ul li a:hover 
+{  
+  font-weight:bold;
+    /*-webkit-transform:scale(1.2);
+    -moz-transform:scale(1.2);
+    -ms-transform:scale(1.2);
+    -o-transform:scale(1.2);
+    transform:scale(1.2);*/
+}
+
+/*SPONSORS */
+
+.client-logo {
+    height: 80px;
+    text-align: center;
+}
+
+.client-logo img {
+        height: 100%;
+        width: auto;
+    }
